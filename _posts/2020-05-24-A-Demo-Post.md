@@ -2,7 +2,7 @@
 layout: post
 title: Demo Page
 author: Demo Author
-tags: demo, page
+tags: demo_page
 ---
 
 ### Demo 
