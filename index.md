@@ -5,7 +5,7 @@ title: Home
 
 ## My World
 
-* [A Example Page](./another-page.html).
+* [A Example Page](./pages/another-page.html).
 
 
 ## About Me
