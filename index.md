@@ -5,12 +5,12 @@ title: Home
 
 ## My World
 
-* [A Example Page](./pages/another-page.html).
+* [A Example Page](./pages/another-page.html)
 
 ## Post
 
 {% for post in site.posts %}
-	* [post,title](post.url).
+	* [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
 ## About Me
