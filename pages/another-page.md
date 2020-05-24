@@ -7,4 +7,4 @@ title: Another Page
 
 _yay_
 
-[back](./)
+[back](././)
