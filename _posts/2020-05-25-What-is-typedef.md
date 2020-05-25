@@ -69,6 +69,24 @@ typedef int int_t, *intp_t, (&fp)(int,int), arr_t[10];
 - ***int_t** হলো **pointer typedef**.
 - **(&fp)(int, int)**  হলো  **reference to a function typedef** যার রিটার্ন টাইপ হলো **int** এরং দুটো int টাইপ প্যারামিটার।
 - **arr_t[10]** হলো ১০ সাইজে **array** ডিক্লার **typedef**.
+**Pointer typedef ডিক্লারেশন:**
+```c
+typedef struct {
+    int a, b;
+} S, *pS;
+```
+```c
+// the following two objects have the same type
+pS ps1;
+S* ps2;
+```
+
+**arr_t[10] ডিক্লারেশন:**
+```c
+// the following two objects have the same type
+int ar1[10];
+arr_t ar2;
+```
 
 #### What does (&fp)(int, int) means?
 **(&fp)(int, int)** দিয়ে বুঝায় যে **fp** একটি **function pointer** যেটা এমন একটা function কে refere করে যার int টাইপের দুটো প্যারামিটার আছে এবং যার রিটার্ন টাইপ int.
