@@ -1,11 +1,10 @@
 ---
 layout: post
-title: tydedef কথন
+title: typedef কথন
 author: Saikat Sharma
 tags: c, c++, typedef
 ---
 
-### typedef কথন
 ### typedef 
 **typedef** হলো **C/C++** এর এমন একটা **keyword** যেটা বিদ্যমান কোন ডাটা-টাইপের **উপনাম** দিতে পারে। মানে ধরুন আমাদের একটা ডাটা-টাইপ আছে **unsigned int** এটা একটু  বড় তাই আমরা চাইলে এটার একটা ছোট সহজ নাম দিতে পারি যেমন **uint**. 
 
