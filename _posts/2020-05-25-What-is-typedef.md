@@ -69,6 +69,7 @@ typedef int int_t, *intp_t, (&fp)(int,int), arr_t[10];
 - ***int_t** হলো **pointer typedef**.
 - **(&fp)(int, int)**  হলো  **reference to a function typedef** যার রিটার্ন টাইপ হলো **int** এরং দুটো int টাইপ প্যারামিটার।
 - **arr_t[10]** হলো ১০ সাইজে **array** ডিক্লার **typedef**.
+
 **Pointer typedef ডিক্লারেশন:**
 ```c
 typedef struct {
