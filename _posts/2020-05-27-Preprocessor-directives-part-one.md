@@ -7,9 +7,10 @@ tags: c, c++, preprocessor directives
 
 #### Preprocessor directives
 **c/c++** প্রোগ্রাম এক্সিকিউশনে কম্পাইলেশনের আগে কিছু কাজ করে থাকে এই কাজকে বলা হয় **preprocess**। আর যে এই **preprocess** কাজটি করে থাকে তাকে বলা হয় **Preprocessor**। প্রিপ্রসেসর প্রিপ্রসেস সময়ে কতো গুলো ভিন্ন ভিন্ন কাজ করে থাকে যেমন, **হেডার ফাইল যুক্ত করা** আর এই ভিন্ন কাজ সমুহকে বলা হয় **Preprocessor directives**। 
-অর্থাৎ  **Preprocessor directives** সমুহ প্রিপ্রসেসর প্রোগ্রাম দ্বারা কম্পাইলেশনের আগে প্রসেস হয়। **Preprocessor directives** গুলো **#** দিয়ে শুরু হয়। উল্লেখ্যযোগ্য কিছু **Preprocessor directives** হলো **#include, #define, #ifdef** ইত্যাদি। 
 
-**বিভিন্ন প্রকার Preprocessor directives*
+অর্থাৎ  **Preprocessor directives** সমুহ প্রিপ্রসেসর প্রোগ্রাম দ্বারা কম্পাইলেশনের আগে প্রসেস হয়। **Preprocessor directives** গুলো **#** দিয়ে শুরু হয়। উল্লেখ্যযোগ্য কিছু Preprocessor directives হলো **#include, #define, #ifdef** ইত্যাদি। 
+
+**বিভিন্ন প্রকার Preprocessor directives**
 - macro definitions (#define, #undef)
 - Conditional inclusions (#ifdef, #ifndef, #if, #endif, #else and #elif)
 - Line control (#line)
@@ -25,7 +26,7 @@ tags: c, c++, preprocessor directives
 #define identifier replacement
 ```
 
-প্রিপ্রসেসরের পর  identifier replacement  দিয়ে পরিবর্তিত হয়ে যাবে। যেমন, 
+প্রিপ্রসেসরের পর  **identifier replacement**  দিয়ে পরিবর্তিত হয়ে যাবে। যেমন, 
 
 ```c
 #define TABLE_SIZE 100
@@ -37,7 +38,7 @@ int table2[TABLE_SIZE];
 int table1[100];
 int table2[100]; 
 ```
-এক কথায়  define  করা macro সমুহ প্রিপ্রসেসরের  পর আসল ভেলু দিয়ে পরিবর্তিত হয়ে যায়। 
+এক কথায়  **define** করা **macro** সমুহ প্রিপ্রসেসরের  পর আসল ভেলু দিয়ে পরিবর্তিত হয়ে যায়। 
 ```c
 #define WIDTH   80
 #define LENGTH  ( WIDTH + 10 )
