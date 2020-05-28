@@ -119,7 +119,7 @@ int main(){
 int main(){
 	int arr[MAX];
 	#undef MAX
-    int MAX = 200005;
+	int MAX = 200005;
 	return 0;
 }
 ```
@@ -127,21 +127,23 @@ int main(){
 উপরের কোডটি এখন কোন ইরর ছাড়াই রান করবে।
 
 **loop কে আমরা নিচের উপায়ে ডিফাইন করতে পারি**।
+
 ```c
 #define FOR(i, N) for(int i = 0; i<N; i++)
 int main(){
 	int N = 5;
    	 FOR(i,N){
-		printf(“%d\n”, i);
+		printf("%d\n", i);
 	}
 }
 ```
 প্রিপ্রসেসরের পর উপরের কোডটি নিচের মতো হয়ে যাবে।
+
 ```c
 int main(){
     int N = 5;
     for (int i = 0; i < N; i++) {
-        printf(“%d\n”, i);
+        printf("%d\n", i);
     }
 }
 ```
@@ -157,7 +159,7 @@ int main(){
                         } 
 int main(){
 	int N = 5;
-   	MULTILINE(i,N);
+	MULTILINE(i,N);
 }
 ```
 
@@ -171,7 +173,7 @@ int main(){
 ```c
 #define STR(x) #x
 int main(){
-    printf("%s\n", STR(hello));
+	printf("%s\n", STR(hello));
 	printf("%s\n", STR("hello"));
 }
 ```
@@ -187,8 +189,8 @@ hello
 ```c
 #define MERGE(a, b) a##b
 int main(){
-	 int c = MERGE(12,345);
-	 printf("%d\n", c);
+	int c = MERGE(12,345);
+	printf("%d\n", c);
 }
 ```
 ```c
