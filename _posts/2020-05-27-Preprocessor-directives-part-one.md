@@ -1,13 +1,15 @@
-### Preprocessor directives
-Preprocessor directives সমুহ প্রিপ্রসেসর প্রোগ্রাম দ্বারা কম্পাইলেশনের আগে প্রসেস হয়।  নিচের ডায়াগ্রামটি দেখলে ব্যাপারটা একটু পরিষ্কার হবে। 
+---
+layout: post
+title: Preprocessor directives প্রথম পার্ট 
+author: Saikat Sharma
+tags: c, c++, preprocessor directives
+---
 
-// diagram
+#### Preprocessor directives
+**c/c++** প্রোগ্রাম এক্সিকিউশনে কম্পাইলেশনের আগে কিছু কাজ করে থাকে এই কাজকে বলা হয় **preprocess**। আর যে এই **preprocess** কাজটি করে থাকে তাকে বলা হয় **Preprocessor**। প্রিপ্রসেসর প্রিপ্রসেস সময়ে কতো গুলো ভিন্ন ভিন্ন কাজ করে থাকে যেমন, **হেডার ফাইল যুক্ত করা** আর এই ভিন্ন কাজ সমুহকে বলা হয় **Preprocessor directives**। 
+অর্থাৎ  **Preprocessor directives** সমুহ প্রিপ্রসেসর প্রোগ্রাম দ্বারা কম্পাইলেশনের আগে প্রসেস হয়। **Preprocessor directives** গুলো **#** দিয়ে শুরু হয়। উল্লেখ্যযোগ্য কিছু **Preprocessor directives** হলো **#include, #define, #ifdef** ইত্যাদি। 
 
-সোর্স কোডটি কম্পাইলেশনের আগে চেক হয় কোন  প্রিপ্রসেসর ডিরেকটিভ আছে কিনা যদি থাকে তাহলে  প্রিপ্রসেসর প্রোগ্রাম দ্বারা সেটা প্রসেস হয় । তারপর কম্পাইল হয়ে অবজেক্ট ফাইল লিংকারের সাথে যুক্ত হয়ে এক্সিকেটেবল ফাইল হয়। 
-
-Preprocessor directives গুলো # দিয়ে শুরু হয়।
-
-**কিছু Preprocessor directives**
+**বিভিন্ন প্রকার Preprocessor directives*
 - macro definitions (#define, #undef)
 - Conditional inclusions (#ifdef, #ifndef, #if, #endif, #else and #elif)
 - Line control (#line)
