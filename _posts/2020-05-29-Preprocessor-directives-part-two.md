@@ -37,7 +37,7 @@ int main(){
 উপরের কোড কিছুই **আউটপুট** দিবে না কারণ **NAME macro** টি ডিফাইন করা নেই। কিন্তু নিচের কোডটি আউটপুট দিবে কারণ  **NAME macro** টি ডিফাইন করা আছে। 
 
 ```c
-#define NAME "true";
+#define NAME "anything";
 int main(){
     #ifdef NAME
 	    printf("NAME is defined.\n");
@@ -63,7 +63,7 @@ NAME is defined.
 এটা **#ifdef** এর উল্টা এখানে যদি  **macro_name** **ডিফাইন** করা না থাকে তাহলে **#ifndef** এর ভেতরে ডুকবে। আর **macro_name**  ডিফাইন করা থাকলে **#ifndef**  কে **স্কিপ** করে যাবে।  যেমন, 
 
 ```c
-#define NAME "true";
+#define NAME "anything";
 int main(){
  #ifndef NAME
 	printf("NAME is not defined.\n");
