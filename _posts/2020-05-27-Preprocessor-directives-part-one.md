@@ -198,12 +198,11 @@ int main(){
 12345
 ```
 
-
-
-
 #### References
 * [Preprocessor directives](http://www.cplusplus.com/doc/tutorial/preprocessor/)
 * [C/C++ Preprocessors](https://www.geeksforgeeks.org/cc-preprocessors/)
 * [Preprocessor operators](https://docs.microsoft.com/en-us/cpp/preprocessor/preprocessor-operators?view=vs-2019)
 * [#define directive (C/C++)](https://docs.microsoft.com/en-us/cpp/preprocessor/hash-define-directive-c-cpp?view=vs-2019)
 
+
+[Preprocessor directives দ্বিতীয় পার্ট](https://saikat-s.github.io/2020/05/29/Preprocessor-directives-part-two.html)
