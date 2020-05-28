@@ -5,7 +5,7 @@ author: Saikat Sharma
 tags: c, c++, preprocessor directives
 ---
 
-#### Preprocessor directives
+### Preprocessor directives
 **c/c++** প্রোগ্রাম এক্সিকিউশনে কম্পাইলেশনের আগে কিছু কাজ করে থাকে এই কাজকে বলা হয় **preprocess**। আর যে এই **preprocess** কাজটি করে থাকে তাকে বলা হয় **Preprocessor**। প্রিপ্রসেসর প্রিপ্রসেস সময়ে কতো গুলো ভিন্ন ভিন্ন কাজ করে থাকে যেমন, **হেডার ফাইল যুক্ত করা** আর এই ভিন্ন কাজ সমুহকে বলা হয় **Preprocessor directives**। 
 
 অর্থাৎ  **Preprocessor directives** সমুহ প্রিপ্রসেসর প্রোগ্রাম দ্বারা কম্পাইলেশনের আগে প্রসেস হয়। **Preprocessor directives** গুলো **#** দিয়ে শুরু হয়। উল্লেখ্যযোগ্য কিছু Preprocessor directives হলো **#include, #define, #ifdef** ইত্যাদি। 
@@ -72,6 +72,7 @@ int main(){
 }
 ```
 **Function macros:** 
+
 **define** দিয়ে প্যারামিটার পাস করেও **macro** ডিক্লেয়ার করা যায়। একে **Function macro definitions** বলা হয়। 
 
 **সিনটেক্স ডিক্লারেশন:**
@@ -96,6 +97,7 @@ int main()
 ```
 
 **#undef**
+
 আমরা কোন **macro** কে **ডিফাইন** করার পর **আনডিফাইন** না করা পর্যন্ত তা প্রোগ্রামে থেকেই যায়। এবং আমরা সেই macro এর ভেলু পরিবর্তন করতে পারি না। যেমন, 
 
 ```c
@@ -146,6 +148,7 @@ int main(){
 আমরা আমাদের নিজেদের সুবিধা মতো প্যারামিটার ঠিক করে নিজের জন্য macro ডিফাইন করতে পারি। 
 
 **multiple lines macros**
+
 শেষ লাইন বাদে বাকি লাইন গুলোর শেষে **ব্যাকস্ল্যাশ ( \ )** চিহ্ন দিয়ে **মাল্টিলাইন macro** ডিফাইন করা যায়। 
 ```c
 #define MULTILINE(i, N) for(int i = 0; i<N; i++) \ 
@@ -161,7 +164,9 @@ int main(){
 
 
 **Preprocessor operators**
+
 **Stringizing operator (#)**
+
 **Function macro** ডেফিনেশনে # ওপারেটর টি # এর পরে যে টোকেনটি পায় তাকে **স্ট্রিং** এ পরিনত  করে দেয়। 
 ```c
 #define STR(x) #x
@@ -175,7 +180,9 @@ int main(){
 hello
 "hello"
 ```
+
 **Token-pasting operator (##)**
+
 **Function macro** ডেফিনেশনে ## ওপারেটর টি ## এর আগে ও পরে যে টোকেন দুটি পায় সে  টোকেন দুটি কে **জোড়া** লাগিয়ে দেয়। 
 ```c
 #define MERGE(a, b) a##b
