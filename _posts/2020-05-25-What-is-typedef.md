@@ -6,7 +6,7 @@ tags: c, c++, typedef
 ---
 
 ### typedef 
-typedef হলো  C/C++ এর এমন একটা  keyword যেটা বিদ্যমান কোন ডাটা-টাইপের **উপনাম** দিতে পারে। মানে ধরুন আমাদের একটা ডাটা-টাইপ আছে  unsigned int এটা একটু  বড় তাই আমরা চাইলে এটার একটা ছোট সহজ নাম দিতে পারি যেমন  uint. 
+typedef হলো  C/C++ এর এমন একটা  keyword যেটা বিদ্যমান কোন ডাটা-টাইপের উপনাম দিতে পারে। মানে ধরুন আমাদের একটা ডাটা-টাইপ আছে  unsigned int এটা একটু  বড় তাই আমরা চাইলে এটার একটা ছোট সহজ নাম দিতে পারি যেমন  uint. 
 
 **সিনটেক্স ডিক্লারেশন:**
 ```c
@@ -16,7 +16,7 @@ typedef current_name new_name;
 ```c
 typedef unsigned int uint;
 ```
-এখন  
+এখন,
 ```c
 unsigned int variables1;
 uint variables2;
@@ -30,7 +30,7 @@ struct student
     int id;
 };
 ```
-উপরের **student** নামক **structure** কে ডিক্লার করতে হবে আমাদের নিচের উপায়ে,
+উপরের **student** নামক **structure** কে ডিক্লেয়ার করতে হবে আমাদের নিচের উপায়ে,
 ```c
 struct student student1;
 ```
