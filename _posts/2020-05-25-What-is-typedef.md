@@ -6,7 +6,7 @@ tags: c, c++, typedef
 ---
 
 ### typedef 
-typedef হলো  C/C++ এর এমন একটা  keyword যেটা বিদ্যমান কোন ডাটা-টাইপের **উপনাম** দিতে পারে। মানে ধরুন আমাদের একটা ডাটা-টাইপ আছে **unsigned int** এটা একটু  বড় তাই আমরা চাইলে এটার একটা ছোট সহজ নাম দিতে পারি যেমন **uint**. 
+typedef হলো  C/C++ এর এমন একটা  keyword যেটা বিদ্যমান কোন ডাটা-টাইপের **উপনাম** দিতে পারে। মানে ধরুন আমাদের একটা ডাটা-টাইপ আছে  unsigned int এটা একটু  বড় তাই আমরা চাইলে এটার একটা ছোট সহজ নাম দিতে পারি যেমন  uint. 
 
 **সিনটেক্স ডিক্লারেশন:**
 ```c
@@ -39,7 +39,7 @@ struct student student1;
 typedef struct student st;
 st student2;
 ```
-এটাকে সরাসরি নিচের উপায়েও ডিক্লার করা যায়।
+এটাকে সরাসরি নিচের উপায়েও ডিক্লেয়ার করা যায়।
 ```c
 typedef struct student
 {
@@ -49,7 +49,7 @@ typedef struct student
 ```
 
 #### এক typedef এ একাধিক ডিক্লারেশন 
-একই ডাটা-টাইপের অনেক ভেরিয়েবল ডিক্লার করা যায় এক লাইনে। যেমন,
+একই ডাটা-টাইপের অনেক ভেরিয়েবল ডিক্লেয়ার করা যায় এক লাইনে। যেমন,
  ```c
  int val1, val2;
  ```
@@ -60,7 +60,7 @@ typedef int *intp_t;            // pointer to int
 typedef int (&fp)(int, int);    // reference to function returning int
 typedef int arr_t[10];          // array of 10 ints
 ```
-এখানে **int** ডাটা-টাইপের বিভিন্ন typedef করা হয়েছে। আমরা এই সব typedef কে এক  typedef দিয়ে ডিক্লার করতে পারি নিচের উপায়,
+এখানে  int ডাটা-টাইপের বিভিন্ন typedef করা হয়েছে। আমরা এই সব typedef কে এক  typedef দিয়ে ডিক্লেয়ার করতে পারি নিচের উপায়,
 ```c
 typedef int int_t, *intp_t, (&fp)(int,int), arr_t[10];
 ```
@@ -107,4 +107,4 @@ int main() {
 
 #### References
 * [typedef specifier](https://en.cppreference.com/w/cpp/language/typedef)
-* [What does this typedef statement mean?](https://stackoverflow.com/questions/22061750/what-does-this-typedef-statement-mean)
+* [What does this typedef statement mean?](https://stackoverflow.com/questions/22061750/what-does-this-typedef-statement-mean)	
