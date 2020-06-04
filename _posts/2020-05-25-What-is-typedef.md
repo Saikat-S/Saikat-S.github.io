@@ -6,13 +6,13 @@ tags: c, c++, typedef
 ---
 
 ### typedef 
-**typedef** হলো **C/C++** এর এমন একটা **keyword** যেটা বিদ্যমান কোন ডাটা-টাইপের **উপনাম** দিতে পারে। মানে ধরুন আমাদের একটা ডাটা-টাইপ আছে **unsigned int** এটা একটু  বড় তাই আমরা চাইলে এটার একটা ছোট সহজ নাম দিতে পারি যেমন **uint**. 
+typedef হলো  C/C++ এর এমন একটা  keyword যেটা বিদ্যমান কোন ডাটা-টাইপের **উপনাম** দিতে পারে। মানে ধরুন আমাদের একটা ডাটা-টাইপ আছে **unsigned int** এটা একটু  বড় তাই আমরা চাইলে এটার একটা ছোট সহজ নাম দিতে পারি যেমন **uint**. 
 
 **সিনটেক্স ডিক্লারেশন:**
 ```c
 typedef current_name new_name;
 ```
-এখন আমরা  **unsigned int** কে **typedef** করতে পারি নিচের উপায়ে, 
+এখন আমরা  unsigned int কে  typedef করতে পারি নিচের উপায়ে, 
 ```c
 typedef unsigned int uint;
 ```
@@ -21,7 +21,7 @@ typedef unsigned int uint;
 unsigned int variables1;
 uint variables2;
 ```
-এখানে **variables1** ও **variables2** একই কাজ করবে। সাধারনত একটু কমপ্লেক্স টাইপ গুলোকে typedef এর মাধ্যমে সহজ করে নেয়া হয়।
+এখানে  variables1 ও  variables2 একই কাজ করবে। সাধারনত একটু কমপ্লেক্স টাইপ গুলোকে typedef এর মাধ্যমে সহজ করে নেয়া হয়।
 যেমন, 
 ```c
 struct student
@@ -65,10 +65,10 @@ typedef int arr_t[10];          // array of 10 ints
 typedef int int_t, *intp_t, (&fp)(int,int), arr_t[10];
 ```
 এখানে, 
-- **int_t** হলো int এর সাধারন **typedef**.
-- ***int_t** হলো **pointer typedef**.
-- **(&fp)(int, int)**  হলো  **reference to a function typedef** যার রিটার্ন টাইপ হলো **int** এরং দুটো int টাইপ প্যারামিটার।
-- **arr_t[10]** হলো ১০ সাইজে **array** ডিক্লার **typedef**.
+- int_t হলো int এর সাধারন  typedef.
+- *int_t হলো  pointer typedef.
+- (&fp)(int, int)  হলো  reference to a function typedef যার রিটার্ন টাইপ হলো  int এরং দুটো int টাইপ প্যারামিটার।
+- arr_t[10] হলো ১০ সাইজে  array ডিক্লার  typedef.
 
 **Pointer typedef ডিক্লারেশন:**
 ```c
@@ -90,7 +90,7 @@ arr_t ar2;
 ```
 
 #### What does (&fp)(int, int) means?
-**(&fp)(int, int)** দিয়ে বুঝায় যে **fp** একটি **function pointer** যেটা এমন একটা function কে refere করে যার int টাইপের দুটো প্যারামিটার আছে এবং যার রিটার্ন টাইপ int.
+(&fp)(int, int) দিয়ে বুঝায় যে  fp একটি  function pointer যেটা এমন একটা function কে refere করে যার int টাইপের দুটো প্যারামিটার আছে এবং যার রিটার্ন টাইপ int.
 নিচের কোডটি দেখলে বুঝতে পারবেন।
 ```c
 typedef int (&fp)(int, int);
